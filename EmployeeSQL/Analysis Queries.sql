@@ -74,8 +74,7 @@ INNER JOIN public.departments d
 ON de.dept_no = d.dept_no
 INNER JOIN public.employees e
 ON de.emp_no = e.emp_no
-WHERE d.dept_name = 'Sales'
-OR d.dept_name = 'Development';
+WHERE d.dept_name in ('Sales','Development');
 
 ----Number 8 query
 SELECT 
