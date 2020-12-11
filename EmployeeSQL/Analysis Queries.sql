@@ -76,3 +76,11 @@ INNER JOIN public.employees e
 ON de.emp_no = e.emp_no
 WHERE d.dept_name = 'Sales'
 OR d.dept_name = 'Development';
+
+----Number 8 query
+SELECT 
+	last_name, 
+	COUNT(last_name) AS lastname_count
+FROM public.employees
+GROUP BY last_name
+ORDER BY last_name DESC;
