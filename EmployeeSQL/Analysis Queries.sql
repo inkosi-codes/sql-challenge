@@ -82,4 +82,4 @@ SELECT
 	COUNT(last_name) AS lastname_count
 FROM public.employees
 GROUP BY last_name
-ORDER BY last_name DESC;
+ORDER BY lastname_count DESC;
